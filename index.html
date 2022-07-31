@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let i = 0;
+        // while (i < 10) {
+        //     alert(i);
+        //     i=i+2;
+        // }
+        // let sum = 0;
+
+        // while (true) {
+
+        //     let value = +prompt("Введите число", '');
+
+        //     if (!value) break; // (*)
+
+        //     sum += value;
+
+        // }
+        // alert('Сумма: ' + sum);
+        // let userAge = 1;
+        // for (; userAge < 10; userAge++){
+        //     if(userAge>5) continue;
+        //     if(userAge === 5){
+        //         userAge = 100;
+        //         console.log(userAge);
+
+        //     }
+        //     alert(userAge);
+        // }
+        // let userAge = 40;
+        // (userAge > 35) ?? alert('oldfkjodjoj');
+        // for (userAge = 2; userAge < 11; userAge = userAge + 2) alert(userAge);
+        // for (let i = 2; i <= 10; i++) {
+        //     if (i % 2 == 0) {
+        //         alert(i);
+        //     }
+        // }
+        // for (let i = 0; i < 3; i++) {
+        //     alert(`number ${i}!`);
+        // }
+        // let userAge = 0;
+        // while (userAge < 3) {
+        //     alert(`number ${userAge} !`);
+        //     userAge++;
+        // }
+        Enter100:
+        for (let number = prompt('enter number bigger than 100');;){
+            if (number > 100){
+                alert('Nice!');
+                break Enter100;
+            } 
+            else if (number < 100){
+                alert('this one is smaller than 100 try again');
+                number = prompt('enter number bigger than 100');
+            }
+             else{
+                alert('this one is equal to 100 try again');
+                number = prompt('enter number bigger than 100');
+            }
+        }
+        let number2;
+        do{
+            number2 = prompt('enter number smaller than 200');
+        } while(number2 >= 200 && number2);
+    </script>
+</body>
+
+</html>
